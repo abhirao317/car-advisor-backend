@@ -1,0 +1,11 @@
+.git
+.idea
+.codex
+.agents
+docs
+demo/.m2
+demo/target
+demo/.idea
+demo/.vscode
+demo/*.iml
+*.log
