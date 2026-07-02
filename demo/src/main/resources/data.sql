@@ -1,8 +1,3 @@
--- 30-car dataset with fixed, model-specific Wikimedia Commons image URLs.
--- These are static file URLs, not keyword-generated/random image services.
--- Prices/specifications are approximate demo data and should be refreshed for production.
--- Wikimedia-hosted images may require attribution depending on each file's license.
-
 INSERT INTO car (
     make,
     model,
@@ -18,33 +13,62 @@ INSERT INTO car (
     image_url
 )
 VALUES
-('Maruti Suzuki', 'Dzire', 'ZXI Plus', 10.19, 'Sedan', 'Petrol', 'Automatic', 25.71, 5, 5.0, 'Compact Sedan', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Suzuki_Dzire_II_1.2_GLX_Hybrid_Arctic_White_Pearl.jpg/900px-Suzuki_Dzire_II_1.2_GLX_Hybrid_Arctic_White_Pearl.jpg'),
-('Tata', 'Punch', 'Creative Plus', 9.45, 'SUV', 'Petrol', 'Automatic', 18.80, 5, 5.0, 'Micro SUV', 'https://upload.wikimedia.org/wikipedia/commons/1/1e/2021_Tata_Punch_Creative_%28India%29_front_view_01.png'),
-('Hyundai', 'Creta', 'SX', 15.30, 'SUV', 'Petrol', 'Automatic', 17.40, 5, 3.0, 'Compact SUV', 'https://upload.wikimedia.org/wikipedia/commons/2/25/2022_Hyundai_Creta_1.6_Plus_%28Chile%29_front_view.jpg'),
-('Tata', 'Nexon', 'Creative Plus', 12.30, 'SUV', 'Petrol', 'Automatic', 17.00, 5, 5.0, 'Compact SUV', 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Tata_Nexon_Blue_Dual_Tone.jpg/900px-Tata_Nexon_Blue_Dual_Tone.jpg'),
-('Maruti Suzuki', 'Fronx', 'Alpha Turbo', 11.98, 'SUV', 'Petrol', 'Automatic', 20.01, 5, 4.0, 'Crossover SUV', 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/2024_Suzuki_Fronx.jpg/900px-2024_Suzuki_Fronx.jpg'),
-('Maruti Suzuki', 'Swift', 'ZXI Plus', 8.84, 'Hatchback', 'Petrol', 'Automatic', 25.75, 5, 3.0, 'Premium Hatchback', 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Suzuki_Swift_%282024%29_hybrid_DSC_6076.jpg/900px-Suzuki_Swift_%282024%29_hybrid_DSC_6076.jpg'),
-('Maruti Suzuki', 'Baleno', 'Alpha', 9.92, 'Hatchback', 'Petrol', 'Automatic', 22.94, 5, 3.0, 'Premium Hatchback', 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2017_Suzuki_Baleno_SZ3_Dualjet_1.2_Front.jpg/900px-2017_Suzuki_Baleno_SZ3_Dualjet_1.2_Front.jpg'),
-('Maruti Suzuki', 'Brezza', 'ZXI Plus', 14.14, 'SUV', 'Petrol', 'Automatic', 19.80, 5, 4.0, 'Compact SUV', 'https://upload.wikimedia.org/wikipedia/commons/e/ee/2022_Maruti_Suzuki_Brezza_ZXi%2B_%28India%29_front_view_03.png'),
-('Mahindra', 'XUV700', 'AX7 Luxury', 25.89, 'SUV', 'Diesel', 'Automatic', 16.57, 7, 5.0, 'Mid-size SUV', 'https://upload.wikimedia.org/wikipedia/commons/b/ba/2021_Mahindra_XUV700_2.2_AX7_%28India%29_front_view.png'),
-('Mahindra', 'Thar', 'LX Hard Top', 17.60, 'SUV', 'Diesel', 'Automatic', 15.20, 4, 4.0, 'Off-road SUV', 'https://upload.wikimedia.org/wikipedia/commons/5/51/Mahindra_Thar_SUV_in_%22Red_Rage%22_color_at_Ashiana_Brahmanda%2C_East_Singbhum_India_%28Ank_Kumar%2C_Infosys_limited%29_02_%28cropped%29.jpg'),
-('Hyundai', 'Venue', 'SX(O)', 13.48, 'SUV', 'Petrol', 'Automatic', 18.31, 5, 4.0, 'Compact SUV', 'https://upload.wikimedia.org/wikipedia/commons/0/0c/2022_Hyundai_Venue_Preferred_in_Polar_White%2C_Front_Right%2C_09-12-2023.jpg'),
-('Kia', 'Sonet', 'GTX Plus', 15.77, 'SUV', 'Diesel', 'Automatic', 19.00, 5, 3.0, 'Compact SUV', 'https://upload.wikimedia.org/wikipedia/commons/7/75/2021_Kia_Sonet_1.5_Premiere_%28Indonesia%29_front_view_02.jpg'),
-('Kia', 'Seltos', 'HTX', 16.90, 'SUV', 'Petrol', 'Automatic', 17.70, 5, 3.0, 'Compact SUV', 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Kia_Seltos_SP2_PE_Snow_White_Pearl_%2817%29_%28cropped%29.jpg'),
-('Toyota', 'Fortuner', 'Legender 4x4', 51.94, 'SUV', 'Diesel', 'Automatic', 14.20, 7, 5.0, 'Full-size SUV', 'https://upload.wikimedia.org/wikipedia/commons/6/66/2015_Toyota_Fortuner_%28New_Zealand%29.jpg'),
-('Toyota', 'Innova Hycross', 'ZX(O)', 30.98, 'MPV', 'Hybrid', 'Automatic', 23.24, 7, 5.0, 'Premium MPV', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/2022_Toyota_Kijang_Innova_2.4_G_GUN142R_%2820220302%29.jpg/900px-2022_Toyota_Kijang_Innova_2.4_G_GUN142R_%2820220302%29.jpg'),
-('Honda', 'City', 'ZX', 16.55, 'Sedan', 'Petrol', 'Automatic', 18.40, 5, 5.0, 'Mid-size Sedan', 'https://upload.wikimedia.org/wikipedia/commons/a/a9/2022_Honda_City_ZX_i-VTEC_%28India%29_front_view_%28cropped%29.jpg'),
-('Skoda', 'Slavia', 'Prestige', 18.69, 'Sedan', 'Petrol', 'Automatic', 19.36, 5, 5.0, 'Mid-size Sedan', 'https://upload.wikimedia.org/wikipedia/commons/9/92/2021_%C5%A0koda_Slavia_1.5_TSI_Style_%28India%29_front_view.png'),
-('Volkswagen', 'Virtus', 'GT Plus Sport', 19.40, 'Sedan', 'Petrol', 'Automatic', 19.62, 5, 5.0, 'Mid-size Sedan', 'https://upload.wikimedia.org/wikipedia/commons/9/9e/2022_Volkswagen_Virtus_1.5_GT_%28India%29_front_view_02.png'),
-('Tata', 'Harrier', 'Fearless Plus', 26.50, 'SUV', 'Diesel', 'Automatic', 16.80, 5, 5.0, 'Mid-size SUV', 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Tata_Buzzard_Sport%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0651%29.jpg'),
-('Renault', 'Kwid', 'Climber', 6.45, 'Hatchback', 'Petrol', 'Automatic', 22.30, 5, 1.0, 'Entry Hatchback', 'https://upload.wikimedia.org/wikipedia/commons/7/77/2023_Renault_Kwid_Iconic_%28Colombia%29_front_view_01.png'),
-('Renault', 'Kiger', 'Emotion Turbo', 11.29, 'SUV', 'Petrol', 'Automatic', 18.20, 5, 4.0, 'Compact SUV', 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Renault_Kiger_front_20230602.jpg/900px-Renault_Kiger_front_20230602.jpg'),
-('Nissan', 'Magnite', 'Tekna Plus', 11.76, 'SUV', 'Petrol', 'Automatic', 17.90, 5, 4.0, 'Compact SUV', 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Nissan_Magnite_2025_1.0_Exclusive_at_WTC_Montevideo_-_04.jpg/900px-Nissan_Magnite_2025_1.0_Exclusive_at_WTC_Montevideo_-_04.jpg'),
-('Jeep', 'Compass', 'Model S', 32.41, 'SUV', 'Diesel', 'Automatic', 17.10, 5, 5.0, 'Premium SUV', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/2019_Jeep_Compass_Limited_2.4L%2C_front_7.6.19.jpg/900px-2019_Jeep_Compass_Limited_2.4L%2C_front_7.6.19.jpg'),
-('BYD', 'Atto 3', 'Superior', 33.99, 'SUV', 'Electric', 'Automatic', 521.00, 5, 5.0, 'Electric SUV', 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/BYD_Atto_3_1X7A6491.jpg/900px-BYD_Atto_3_1X7A6491.jpg'),
-('Tata', 'Tiago', 'XZ Plus', 8.20, 'Hatchback', 'Petrol', 'Automatic', 19.00, 5, 4.0, 'Hatchback', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/2022_Tata_Tiago_XZA%2B_front_20230512.jpg/900px-2022_Tata_Tiago_XZA%2B_front_20230512.jpg'),
-('Hyundai', 'i20', 'Asta(O)', 11.25, 'Hatchback', 'Petrol', 'Automatic', 20.00, 5, 3.0, 'Premium Hatchback', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hyundai_i20_%28III%2C_Facelift%29_%E2%80%93_f_11102025.jpg/900px-Hyundai_i20_%28III%2C_Facelift%29_%E2%80%93_f_11102025.jpg'),
-('Maruti Suzuki', 'Grand Vitara', 'Alpha Plus Hybrid', 20.68, 'SUV', 'Hybrid', 'Automatic', 27.97, 5, 4.0, 'Compact SUV', 'https://upload.wikimedia.org/wikipedia/commons/0/0f/2022_Suzuki_Grand_Vitara_GX_Smart_Hybrid_%28Indonesia%29_front_view.jpg'),
-('Skoda', 'Kushaq', 'Prestige', 20.49, 'SUV', 'Petrol', 'Automatic', 18.86, 5, 5.0, 'Compact SUV', 'https://upload.wikimedia.org/wikipedia/commons/2/29/2021_%C5%A0koda_Kushaq_%28India%29_front_view.png'),
-('Volkswagen', 'Taigun', 'GT Plus Sport', 20.00, 'SUV', 'Petrol', 'Automatic', 18.61, 5, 5.0, 'Compact SUV', 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Volkswagen_Taigun_front_20230528.jpg/900px-Volkswagen_Taigun_front_20230528.jpg'),
-('Honda', 'Amaze', 'ZX', 11.20, 'Sedan', 'Petrol', 'Automatic', 19.46, 5, 5.0, 'Compact Sedan', 'https://upload.wikimedia.org/wikipedia/commons/2/25/Honda_Amaze_front_view_%28cropped%29.jpg');
+('Hyundai', 'Creta', 'SX', 15.30, 'SUV', 'Petrol', 'Automatic', 17.4, 5, 3.0, 'Compact SUV', 'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=900&q=80'),
+
+('Maruti Suzuki', 'Baleno', 'Alpha', 9.88, 'Hatchback', 'Petrol', 'Manual', 22.3, 5, 3.0, 'Premium Hatchback', 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80'),
+
+('Tata', 'Nexon', 'Creative Plus', 13.80, 'SUV', 'Petrol', 'Automatic', 17.0, 5, 5.0, 'Compact SUV', 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=900&q=80'),
+
+('Honda', 'City', 'ZX', 16.35, 'Sedan', 'Petrol', 'Manual', 17.8, 5, 5.0, 'Mid-size Sedan', 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=900&q=80'),
+
+('Mahindra', 'XUV700', 'AX5', 19.90, 'SUV', 'Diesel', 'Manual', 16.6, 7, 5.0, 'Mid-size SUV', 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80'),
+
+('Toyota', 'Innova Hycross', 'VX', 25.97, 'MPV', 'Hybrid', 'Automatic', 21.1, 7, 5.0, 'Premium MPV', 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=900&q=80'),
+
+('Kia', 'Seltos', 'GT Line', 18.75, 'SUV', 'Petrol', 'Automatic', 17.7, 5, 3.0, 'Compact SUV', 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=900&q=80'),
+
+('Volkswagen', 'Virtus', 'GT Plus', 18.20, 'Sedan', 'Petrol', 'Automatic', 18.1, 5, 5.0, 'Mid-size Sedan', 'https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=900&q=80'),
+
+('Skoda', 'Slavia', 'Style', 17.60, 'Sedan', 'Petrol', 'Manual', 19.3, 5, 5.0, 'Mid-size Sedan', 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80'),
+
+('Mahindra', 'Scorpio N', 'Z8', 22.50, 'SUV', 'Diesel', 'Automatic', 15.2, 7, 5.0, 'Full-size SUV', 'https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=900&q=80'),
+
+('Toyota', 'Fortuner', 'Legender', 45.50, 'SUV', 'Diesel', 'Automatic', 14.4, 7, 5.0, 'Premium SUV', 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=900&q=80'),
+
+('MG', 'Hector', 'Sharp Pro', 21.20, 'SUV', 'Petrol', 'CVT', 15.6, 5, 5.0, 'Mid-size SUV', 'https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=900&q=80'),
+
+('Renault', 'Kiger', 'RXZ', 11.40, 'SUV', 'Petrol', 'Manual', 20.5, 5, 4.0, 'Compact SUV', 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=900&q=80'),
+
+('Nissan', 'Magnite', 'XV Premium', 10.90, 'SUV', 'Petrol', 'CVT', 19.9, 5, 4.0, 'Compact SUV', 'https://images.unsplash.com/photo-1502161254066-6c74afbf07aa?auto=format&fit=crop&w=900&q=80'),
+
+('Maruti Suzuki', 'Grand Vitara', 'Alpha+', 18.50, 'SUV', 'Hybrid', 'Automatic', 27.9, 5, 4.0, 'Mid-size SUV', 'https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=900&q=80'),
+
+('Hyundai', 'Verna', 'SX(O)', 17.20, 'Sedan', 'Petrol', 'Automatic', 18.6, 5, 5.0, 'Mid-size Sedan', 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=80'),
+
+('Honda', 'Elevate', 'ZX CVT', 17.85, 'SUV', 'Petrol', 'Automatic', 16.9, 5, 5.0, 'Mid-size SUV', 'https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=900&q=80'),
+
+('Tata', 'Harrier', 'Fearless+', 24.10, 'SUV', 'Diesel', 'Automatic', 16.8, 5, 5.0, 'Mid-size SUV', 'https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=900&q=80'),
+
+('Tata', 'Punch', 'Accomplished', 9.75, 'SUV', 'Petrol', 'Manual', 20.1, 5, 5.0, 'Micro SUV', 'https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=900&q=80'),
+
+('Kia', 'Sonet', 'HTX', 13.60, 'SUV', 'Diesel', 'Automatic', 19.0, 5, 3.0, 'Subcompact SUV', 'https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?auto=format&fit=crop&w=900&q=80'),
+
+('Hyundai', 'Venue', 'SX Turbo', 12.95, 'SUV', 'Petrol', 'Automatic', 18.3, 5, 4.0, 'Subcompact SUV', 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=900&q=80'),
+
+('Maruti Suzuki', 'Brezza', 'ZXI+', 14.20, 'SUV', 'Petrol', 'Automatic', 19.8, 5, 4.0, 'Subcompact SUV', 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80'),
+
+('Toyota', 'Glanza', 'V', 9.95, 'Hatchback', 'Petrol', 'AMT', 22.9, 5, 4.0, 'Premium Hatchback', 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=900&q=80'),
+
+('Volkswagen', 'Taigun', 'GT Edge', 19.10, 'SUV', 'Petrol', 'Automatic', 17.9, 5, 5.0, 'Compact SUV', 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=80'),
+
+('Skoda', 'Kushaq', 'Monte Carlo', 18.90, 'SUV', 'Petrol', 'Automatic', 18.0, 5, 5.0, 'Compact SUV', 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80'),
+
+('Jeep', 'Compass', 'Limited', 31.40, 'SUV', 'Diesel', 'Automatic', 17.1, 5, 5.0, 'Premium SUV', 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80'),
+
+('Citroen', 'C3 Aircross', 'Max', 13.45, 'SUV', 'Petrol', 'Manual', 18.5, 7, 4.0, 'Compact SUV', 'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=900&q=80'),
+
+('BYD', 'Atto 3', 'Special Edition', 34.00, 'SUV', 'Electric', 'Automatic', 521.0, 5, 5.0, 'Electric SUV', 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=900&q=80'),
+
+('Tata', 'Tiago EV', 'XZ+', 11.99, 'Hatchback', 'Electric', 'Automatic', 315.0, 5, 4.0, 'Electric Hatchback', 'https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=900&q=80'),
+
+('MG', 'ZS EV', 'Essence', 25.80, 'SUV', 'Electric', 'Automatic', 461.0, 5, 5.0, 'Electric SUV', 'https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=900&q=80');
